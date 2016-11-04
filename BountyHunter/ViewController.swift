@@ -13,6 +13,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        for fontFamilyName in UIFont.familyNames(){
+            print (fontFamilyName)
+            for fontName in UIFont.fontNamesForFamilyName(fontFamilyName){
+                print ("\t\(fontName)")
+            }
+        }
+        
+        //ordenadosPor es una etiqueta, que se puede cambiar por _ (guion bajo y espacio)
+       
     }
 
     override func didReceiveMemoryWarning() {
